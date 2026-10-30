@@ -18,7 +18,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-2">
             <Image
               src="/logo.png"
-              alt="MyColourCost"
+              alt="My Colour Cost"
               width={140}
               height={40}
               className="h-10 w-auto"
@@ -44,7 +44,9 @@ export default function LandingPage() {
               Contact
             </a>
           </div>
-          <Button>Get Started</Button>
+          <Button asChild>
+            <Link href="https://retailer.mycolourcost.com/">Get Started</Link>
+          </Button>
         </nav>
       </header>
 
@@ -68,18 +70,13 @@ export default function LandingPage() {
             sell their products on our one hub platform built for the
             hairdressing industry.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center items-center">
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white rounded-full px-8 font-semibold"
+              asChild
             >
-              Download App
-            </Button>
-            <Button
-              size="lg"
-              className="border-white text-white hover:bg-white/20 rounded-full px-8 font-semibold border border-white"
-            >
-              Learn More
+              <a href="#download">Download App</a>
             </Button>
           </div>
         </div>
@@ -260,7 +257,7 @@ export default function LandingPage() {
           </h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             Join thousands of retailers and wholesalers already using
-            MyColourCost to streamline their business.
+            My Colour Cost to streamline their business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -325,8 +322,11 @@ export default function LandingPage() {
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white rounded-full px-8 font-semibold"
+            asChild
           >
-            Get Started Free
+            <Link href="https://retailer.mycolourcost.com/">
+              Get Started Free
+            </Link>
           </Button>
         </div>
       </section>
@@ -423,7 +423,7 @@ export default function LandingPage() {
           </div>
 
           <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-white/60 text-sm">
-            <p>&copy; 2024 MyColourCost. All rights reserved.</p>
+            <p>&copy; 2024 My Colour Cost. All rights reserved.</p>
             <div className="flex gap-6 mt-4 sm:mt-0">
               <a href="#" className="hover:text-white transition">
                 Privacy Policy

@@ -7,7 +7,11 @@ const _geist = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'MyColourCost - Hair Industry Platform',
+  title: 'My Colour Cost - Hair Industry Platform',
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+  },
   description: 'Complete platform for retailers, brands, and wholesalers in the hairdressing industry',
   generator: 'v0.app',
   themeColor: '#FF1493',
